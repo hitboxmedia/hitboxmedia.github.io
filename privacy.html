@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité — Hitbox Media</title>
+<meta name="description" content="Ce que l'application interne hitbox-drive consulte dans Google Drive, pourquoi, et ce qu'elle conserve.">
+<style>
+  :root { --fond: #ffffff; --texte: #1a1a1a; --doux: #5c5c5c; --trait: #e4e4e4; --accent: #1a56db; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --fond: #141414; --texte: #ededed; --doux: #a3a3a3; --trait: #2c2c2c; --accent: #7aa2f7;
+    }
+  }
+  :root[data-theme="dark"] {
+    --fond: #141414; --texte: #ededed; --doux: #a3a3a3; --trait: #2c2c2c; --accent: #7aa2f7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--fond); color: var(--texte);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 4rem 16px 6rem; }
+  h1 { font-size: clamp(1.6rem, 5vw, 2.1rem); line-height: 1.2; letter-spacing: -0.02em; margin: 0 0 .4rem; }
+  .maj { color: var(--doux); font-size: .92rem; margin: 0 0 2.5rem; }
+  h2 { font-size: 1.1rem; margin: 2.5rem 0 .6rem; letter-spacing: -0.01em; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
+  a { color: var(--accent); }
+  footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--trait); color: var(--doux); font-size: .9rem; }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Politique de confidentialité</h1>
+  <p class="maj">Application <strong>hitbox-drive</strong> de Hitbox Media &middot; mise à jour le 29 septembre 2026</p>
+
+  <h2>Qui est responsable</h2>
+  <p>
+    Hitbox Media est un projet de studio de création de contenu porté par une seule personne, son fondateur.
+    L'application <strong>hitbox-drive</strong> est un outil interne de ce projet. Elle n'est pas proposée au public
+    et n'a pas d'utilisateurs autres que son fondateur, qui s'y connecte avec son propre compte Google.
+  </p>
+
+  <h2>À quelles données Google l'application accède</h2>
+  <p>
+    L'application demande l'accès à Google Drive (lecture et écriture) pour le seul compte Google de son fondateur.
+    Elle s'appuie sur <a href="https://rclone.org/drive/" rel="noopener noreferrer">rclone</a>, un client open source,
+    exécuté localement sur la machine de son fondateur.
+  </p>
+  <p>Cet accès sert exclusivement à :</p>
+  <ul>
+    <li>
+      <strong>télécharger les fichiers vidéo</strong> que des marques ou des créateurs ont partagés avec ce compte,
+      dans le cadre de campagnes auxquelles Hitbox Media participe ;
+    </li>
+    <li>
+      <strong>déposer les extraits vidéo produits</strong> dans un dossier privé de ce même compte, pour que son
+      fondateur puisse les visionner et les valider avant toute diffusion.
+    </li>
+  </ul>
+  <p>
+    L'application ne lit aucun autre compte Google, n'accède à aucune autre donnée Google (ni contacts, ni agenda,
+    ni messagerie), et ne consulte jamais le Drive d'un tiers en dehors des fichiers qui ont été explicitement
+    partagés avec le compte de son fondateur.
+  </p>
+
+  <h2>Ce qui est conservé, et où</h2>
+  <ul>
+    <li>
+      <strong>Le jeton d'autorisation Google</strong> est enregistré dans le fichier de configuration de rclone,
+      sur la machine personnelle de son fondateur. Il n'est transmis à personne, n'est déposé sur aucun serveur et
+      ne figure dans aucun dépôt de code.
+    </li>
+    <li>
+      <strong>Les fichiers vidéo</strong> restent sur cette même machine et dans le Google Drive de son fondateur.
+      Les dossiers concernés sont privés.
+    </li>
+    <li>
+      <strong>Aucune donnée n'est collectée</strong> à des fins de mesure, de statistique ou de publicité.
+      L'application n'utilise ni traceur, ni outil d'analyse d'audience.
+    </li>
+  </ul>
+
+  <h2>Ce qui n'est jamais fait</h2>
+  <ul>
+    <li>Aucune donnée n'est vendue, louée, ni cédée à un tiers.</li>
+    <li>Aucune donnée n'est transmise à un service externe, hormis les API de Google elles-mêmes.</li>
+    <li>Aucun fichier n'est rendu public ni partagé par l'application.</li>
+    <li>Aucun entraînement de modèle n'est effectué sur les données consultées.</li>
+  </ul>
+
+  <h2>Retirer l'autorisation</h2>
+  <p>
+    L'autorisation accordée à hitbox-drive peut être retirée à tout moment depuis la page
+    <a href="https://myaccount.google.com/permissions" rel="noopener noreferrer">Applications ayant accès à votre compte</a>
+    du compte Google concerné. L'application perd alors immédiatement tout accès à Google Drive. Le jeton local peut
+    être supprimé avec la commande <code>rclone config delete</code>.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Le responsable du traitement est le fondateur de Hitbox Media, qui est aussi le seul utilisateur de
+    l'application. Son adresse d'assistance n'est pas publiée ici, volontairement, pour ne pas l'exposer à la
+    collecte automatisée : elle est affichée par Google sur l'écran d'autorisation de l'application, au moment
+    de la connexion, et renseignée dans la configuration OAuth du projet.
+  </p>
+
+  <footer>
+    <a href="./">Retour à l'accueil</a> &middot; Hitbox Media
+  </footer>
+</main>
+</body>
+</html>
