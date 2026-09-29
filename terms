@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conditions d'utilisation — Hitbox Media</title>
+<meta name="description" content="Conditions d'utilisation de hitbox-drive, l'application interne de Hitbox Media.">
+<style>
+  :root { --fond: #ffffff; --texte: #1a1a1a; --doux: #5c5c5c; --trait: #e4e4e4; --accent: #1a56db; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --fond: #141414; --texte: #ededed; --doux: #a3a3a3; --trait: #2c2c2c; --accent: #7aa2f7;
+    }
+  }
+  :root[data-theme="dark"] {
+    --fond: #141414; --texte: #ededed; --doux: #a3a3a3; --trait: #2c2c2c; --accent: #7aa2f7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--fond); color: var(--texte);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 4rem 16px 6rem; }
+  h1 { font-size: clamp(1.6rem, 5vw, 2.1rem); line-height: 1.2; letter-spacing: -0.02em; margin: 0 0 .4rem; }
+  .maj { color: var(--doux); font-size: .92rem; margin: 0 0 2.5rem; }
+  h2 { font-size: 1.1rem; margin: 2.5rem 0 .6rem; letter-spacing: -0.01em; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
+  a { color: var(--accent); }
+  footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--trait); color: var(--doux); font-size: .9rem; }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Conditions d'utilisation</h1>
+  <p class="maj">Application <strong>hitbox-drive</strong> de Hitbox Media &middot; mise à jour le 29 septembre 2026</p>
+
+  <h2>Objet</h2>
+  <p>
+    Ces conditions encadrent l'utilisation de <strong>hitbox-drive</strong>, l'application interne qui relie la
+    chaîne de production de Hitbox Media à Google Drive. Elles s'appliquent à toute utilisation de l'application.
+  </p>
+
+  <h2>À qui l'application est destinée</h2>
+  <p>
+    L'application est réservée à l'usage de Hitbox Media et de son fondateur, qui en est le seul utilisateur.
+    Elle n'est pas proposée au public, ne fait l'objet d'aucune inscription et n'est accessible à aucun tiers.
+    Aucun compte ne peut être créé par une autre personne.
+  </p>
+
+  <h2>Ce que l'application fait, et ne fait pas</h2>
+  <ul>
+    <li>
+      Elle télécharge des fichiers vidéo partagés avec le compte Google de son utilisateur, et dépose les extraits
+      produits dans un dossier privé de ce même compte.
+    </li>
+    <li>
+      Elle ne publie rien, ne diffuse rien, ne partage aucun fichier et n'envoie aucune donnée à un tiers.
+      Toute diffusion éventuelle est une décision humaine, prise séparément et hors de l'application.
+    </li>
+  </ul>
+
+  <h2>Droits sur les contenus</h2>
+  <p>
+    Les fichiers vidéo traités par l'application appartiennent aux marques et aux créateurs qui les ont produits.
+    Hitbox Media ne les utilise que dans les limites fixées par la campagne au titre de laquelle ils ont été mis à
+    disposition. Aucun contenu de tiers n'est réutilisé sans droits établis.
+  </p>
+
+  <h2>Disponibilité et responsabilité</h2>
+  <p>
+    L'application est un outil personnel, fourni en l'état, sans garantie d'aucune sorte. Elle peut être
+    interrompue, modifiée ou arrêtée à tout moment, sans préavis et sans que cela ouvre droit à quoi que ce soit.
+    Son utilisateur est seul responsable de l'usage qu'il en fait.
+  </p>
+
+  <h2>Services tiers</h2>
+  <p>
+    L'application s'appuie sur l'API Google Drive, dont l'usage reste soumis aux conditions de Google, et sur
+    <a href="https://rclone.org/" rel="noopener noreferrer">rclone</a>, un client open source, exécuté localement.
+    L'usage qu'elle fait des données Google est décrit dans notre
+    <a href="privacy.html">politique de confidentialité</a>.
+  </p>
+
+  <h2>Modification de ces conditions</h2>
+  <p>
+    Ces conditions peuvent être modifiées. La date de dernière mise à jour figure en haut de cette page.
+  </p>
+
+  <h2>Droit applicable</h2>
+  <p>
+    Ces conditions sont régies par le droit français.
+  </p>
+
+  <footer>
+    <a href="./">Retour à l'accueil</a> &middot; <a href="privacy.html">Politique de confidentialité</a> &middot; Hitbox Media
+  </footer>
+</main>
+</body>
+</html>
