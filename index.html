@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hitbox Media</title>
+<meta name="description" content="Hitbox Media, studio de création de contenu court pour TikTok et Instagram. Présentation du projet et de hitbox-drive, son outil interne.">
+<style>
+  :root {
+    --fond: #ffffff; --texte: #1a1a1a; --doux: #5c5c5c; --trait: #e4e4e4; --accent: #1a56db;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --fond: #141414; --texte: #ededed; --doux: #a3a3a3; --trait: #2c2c2c; --accent: #7aa2f7;
+    }
+  }
+  :root[data-theme="dark"] {
+    --fond: #141414; --texte: #ededed; --doux: #a3a3a3; --trait: #2c2c2c; --accent: #7aa2f7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--fond); color: var(--texte);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 4rem 16px 6rem; }
+  h1 { font-size: clamp(1.8rem, 6vw, 2.5rem); line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 .5rem; }
+  .accroche { color: var(--doux); font-size: 1.05rem; margin: 0 0 3rem; }
+  h2 { font-size: 1.15rem; margin: 2.75rem 0 .75rem; letter-spacing: -0.01em; }
+  p, li { color: var(--texte); }
+  ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
+  a { color: var(--accent); }
+  .encadre { border: 1px solid var(--trait); border-radius: 10px; padding: 1.25rem 1.4rem; margin: 1.5rem 0; }
+  .encadre h2 { margin-top: 0; }
+  footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--trait); color: var(--doux); font-size: .9rem; }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Hitbox Media</h1>
+  <p class="accroche">Studio de création de contenu court pour TikTok et Instagram. Projet en cours de lancement.</p>
+
+  <h2>Ce que fait Hitbox Media</h2>
+  <p>
+    Hitbox Media produit des extraits vidéo courts et verticaux à partir de contenus dont les droits
+    d'utilisation nous sont accordés par les marques et les créateurs qui les diffusent, dans le cadre de
+    campagnes de clipping rémunérées. Chaque publication est validée à la main avant diffusion.
+  </p>
+  <p>
+    Le studio est piloté par son fondateur, avec une chaîne de production largement automatisée. Il n'a
+    pas de clients à ce stade et ne propose aucun service en ligne au public.
+  </p>
+
+  <div class="encadre">
+    <h2>hitbox-drive, notre outil interne</h2>
+    <p>
+      <strong>hitbox-drive</strong> est l'application interne qui relie notre chaîne de production à Google Drive.
+      Elle n'est pas destinée au public : elle est utilisée par le seul compte Google de son fondateur, sur sa
+      propre machine.
+    </p>
+    <p>Elle sert à deux choses, et à rien d'autre :</p>
+    <ul>
+      <li>
+        <strong>récupérer les rushs</strong> que les marques partagent avec nous dans leurs dossiers Google Drive,
+        pour pouvoir en monter les extraits que leur campagne autorise ;
+      </li>
+      <li>
+        <strong>déposer les extraits terminés</strong> dans un dossier privé du Drive de son fondateur, afin qu'il
+        puisse les visionner et les valider depuis son téléphone avant toute diffusion.
+      </li>
+    </ul>
+    <p>
+      L'application ne publie rien, ne diffuse rien et ne partage aucun fichier avec des tiers.
+      Le détail de ce qu'elle voit et de ce qu'elle conserve figure dans notre
+      <a href="privacy.html">politique de confidentialité</a>.
+    </p>
+  </div>
+
+  <h2>Contact</h2>
+  <p>
+    Cette application n'étant pas destinée au public, elle n'a pas de support ouvert. L'adresse d'assistance
+    du projet figure sur l'écran d'autorisation Google présenté au moment de la connexion, et dans notre
+    <a href="privacy.html">politique de confidentialité</a>.
+  </p>
+
+  <footer>
+    Hitbox Media &middot; <a href="privacy.html">Politique de confidentialité</a>
+  </footer>
+</main>
+</body>
+</html>
